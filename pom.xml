@@ -12,7 +12,7 @@
 	<artifactId>examserver</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>examserver</name>
-	<description>backend coder for exam portal</description>
+	<description>backend code for exam portal</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -49,6 +49,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.36</version>
+			<scope>provided</scope>
+		</dependency>
+
 	</dependencies>
 
 	<build>
