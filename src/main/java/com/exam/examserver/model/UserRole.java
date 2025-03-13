@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 public class UserRole {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long userRolesId;
+    private Long userRoleId;
     @ManyToOne(fetch = FetchType.EAGER)
     private User user;
     @ManyToOne(fetch = FetchType.LAZY)
