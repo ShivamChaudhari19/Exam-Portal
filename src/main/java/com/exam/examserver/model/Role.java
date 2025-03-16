@@ -1,5 +1,6 @@
 package com.exam.examserver.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,6 +17,8 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long roleId;
     private String roleName;
-    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "role")
-    private Set<UserRole> userRoles= new HashSet<>();
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "role")
+    @JsonIgnore
+    private Set<UserRole> userRoles = new HashSet<>();
+
 }

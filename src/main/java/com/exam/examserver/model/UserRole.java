@@ -1,11 +1,12 @@
 package com.exam.examserver.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
 @Entity
+@Setter
+@Getter
+@AllArgsConstructor
 @NoArgsConstructor
 public class UserRole {
     @Id
