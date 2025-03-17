@@ -41,6 +41,12 @@ public class UserControler {
         return this.userService.findByUsername(username);
     }
 
+    //delete user by id
+    @DeleteMapping("/{id}")
+    public void deleteUser(@PathVariable("id") Long id){
+        this.userService.deleteUser(id);
+    }
+
 
 
 }

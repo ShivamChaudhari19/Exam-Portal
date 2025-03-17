@@ -12,4 +12,9 @@ public interface UserService {
 
  //get user by username
  public User findByUsername(String username);
+
+ //delete user by user id
+ public void deleteUser(Long id);
+
 }
+
