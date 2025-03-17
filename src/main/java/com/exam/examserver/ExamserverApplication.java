@@ -14,7 +14,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @SpringBootApplication
-public class ExamserverApplication implements CommandLineRunner {
+public class ExamserverApplication /*implements CommandLineRunner*/ {
 
 
 	@Autowired
@@ -23,27 +23,29 @@ public class ExamserverApplication implements CommandLineRunner {
 		SpringApplication.run(ExamserverApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		User user=new User();
-		user.setUsername("skwewsdsdljs");
-		user.setPassword("728sdfsdssf9");
-		user.setFirstName("Ssdfsdasdstyam");
-		user.setLastName("Chadsfsudhari");
-		user.setPhone("845956sdfsf9016");
-		user.setAbout("work at nrb sinsdfsdfsfsce 2020");
-
-
-		Role role =new Role();
-
-		role.setRoleName("usyer");
-
-		Set<UserRole> userRoleSet=new HashSet<>();
-		UserRole userRole=new UserRole();
-		userRole.setRole(role);
-		userRole.setUser(user);
-		userRoleSet.add(userRole);
-		User user1=this.userService.createUser(user,userRoleSet);
-
-}
+//	@Override
+//	public void run(String... args) throws Exception {
+//	User user=new User();
+//	user.setFirstName("shivam");
+//	user.setLastName("chaudhari");
+//	user.setUsername("shivam_chaudhari19");
+//	user.setPassword("744826shivam");
+//	user.setPhone("8459787658");
+//	user.setAbout("First Admin/ developer");
+//	user.setEnable(false);
+//
+//	Role role=new Role();
+//	role.setRoleName("admin");
+//	role.setRoleId(44L);
+//
+//	Set<UserRole> userRoleSet=new HashSet<>();
+//
+//	UserRole userRole=new UserRole();
+//	userRole.setRole(role);
+//	userRole.setUser(user);
+//
+//	userRoleSet.add(userRole);
+//
+//	this.userService.createUser(user,userRoleSet);
+//}
 }
