@@ -47,6 +47,10 @@ public class UserControler {
         this.userService.deleteUser(id);
     }
 
-
+    //update user by id
+    @PutMapping("/")
+    public User updateUser(@RequestBody User user){
+        return this.userService.updateUser(user);
+    }
 
 }
